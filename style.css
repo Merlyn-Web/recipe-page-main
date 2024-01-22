@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(330, 100%, 98%);
+}
+
+h3,
+h1,
+h5 {
+    font-family: 'Young Serif', serif;
+}
+
+p,
+ul,
+ol,
+span,
+.attribution {
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    width: 750px;
+    height: 1650px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container2,
+.head {
+    padding: 0px 40px 0px 40px;
+}
+
+.head {
+    margin-top: 30px;
+}
+
+.image-omelette {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.title {
+    margin-top: 20px;
+}
+
+.para1 {
+    margin-top: 20px;
+}
+
+
+.preparation {
+    width: 100%;
+    height: auto;
+    background-color: hsl(330, 100%, 98%);
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.title2 {
+    font-size: 20px;
+    color: hsl(332, 51%, 32%);
+}
+
+.preparation ul,
+.ingredients ul,
+.instructions ol {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.preparation ul li::before,
+.ingredients ul li::before {
+    content: "•";
+    padding-right: 30px;
+    color: hsl(332, 51%, 32%);
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.preparation ul li span {
+    font-weight: 600;
+}
+
+hr,
+.ingredients,
+.instructions,
+.nutrition {
+    margin-top: 30px;
+}
+
+.h3-all {
+    color: hsl(14, 45%, 36%);
+}
+
+.instructions ol li {
+    list-style: none;
+    counter-increment: compteur;
+    margin-top: 10px;
+}
+
+.instructions ol li span {
+    font-weight: 600;
+}
+
+.instructions ol li::before {
+    content: "" counter(compteur) "․";
+    color: hsl(14, 45%, 36%);
+    line-height: 30px;
+    font-size: 20px
+}
+
+.nutrition p {
+    margin-top: 15px;
+}
+
+.nutrition-table p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nutrition-table p span {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+.hr-except {
+    margin: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(14, 45%, 36%);
+    margin-top: 50px;
+}
+
+.attribution a {
+    color: hsl(39, 93%, 42%);
+}
+
+@media screen and (max-width: 920px) {
+    body {
+        background-color: black;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .head {
+        padding: 0;
+        margin: 0;
+    }
+
+    .image-omelette {
+        padding: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .title,
+    .para1 {
+        padding: 0px 40px 0px 40px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .preparation {
+        padding: 15px;
+    }
+
+    .preparation ul li {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .title {
+        font-size: 25px;
+    }
+}
